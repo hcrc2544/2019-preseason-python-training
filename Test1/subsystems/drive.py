@@ -1,4 +1,4 @@
-from wpilib.command.subsystem import Subsystem
+from wpilib.command import Subsystem
 from wpilib import Talon, Encoder
 from wpilib.drive import DifferentialDrive
 from math import pi

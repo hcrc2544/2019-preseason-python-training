@@ -12,6 +12,6 @@ class Operator_Interface():
     def teleop_update(self):
         #y value is negated to drive in the desired direction
         new_command = Drive_Immediate(self.robot.drive_subsystem, -self.joystick_left.getY(), self.joystick_right.getX())
-        Scheduler.getInstance().add(new_command)
+        Scheduler.getInstance().addCommand(new_command)
 
 
